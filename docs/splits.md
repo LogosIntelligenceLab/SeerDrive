@@ -61,7 +61,7 @@ The Table belows offers an overview on the training and test splits supported by
     <tr>
         <td rowspan="2">NAVSIM</td>
         <td>navtrain</td>
-        <td>Standard split for training agents in NAVSIM with non-trivial driving scenes. Sensors available separately in <a href="https://github.com/autonomousvision/navsim/blob/main/download/download_navtrain.sh">download_navtrain.sh</a>.</td>
+        <td>Standard split for training agents in NAVSIM with non-trivial driving scenes. Sensors available separately in <a href="https://github.com/autonomousvision/navsim/blob/main/download/download_navtrain_aws.sh">download_navtrain_aws.sh</a>.</td>
         <td>-</td>
         <td>445GB*</td>
         <td>
@@ -108,6 +108,6 @@ The Table belows offers an overview on the training and test splits supported by
 
 The standard splits `trainval`, `test`, and `mini` are from the OpenScene dataset. Note that the data corresponds to the nuPlan dataset with a lower frequency of 2Hz. You can download all standard splits over Hugging Face with the bash scripts in [download](../download)
 
-NAVSIM provides a subset and filter of the `trainval` split, called `navtrain`. The `navtrain` split facilitates a standardized training scheme and requires significantly less sensor data storage than `travel` (445GB vs. 2100GB). If your agents don't need historical sensor inputs, you can download `navtrain` without history, which requires 300GB of storage. Note that `navtrain` can be downloaded separately via [download_navtrain.sh](https://github.com/autonomousvision/navsim/blob/main/download/download_navtrain.sh) but still requires access to the `trainval` logs. Similarly, the `navtest` split enables a standardized set for testing agents with a provided scene filter. Both `navtrain` and `navtest` are filtered to increase interesting samples in the sets. 
+NAVSIM provides a subset and filter of the `trainval` split, called `navtrain`. The `navtrain` split facilitates a standardized training scheme and requires significantly less sensor data storage than `travel` (445GB vs. 2100GB). If your agents don't need historical sensor inputs, you can download `navtrain` without history, which requires 300GB of storage. Note that `navtrain` can be downloaded separately via [download_navtrain.sh](https://github.com/autonomousvision/navsim/blob/main/download/download_navtrain_aws.sh) but still requires access to the `trainval` logs. Similarly, the `navtest` split enables a standardized set for testing agents with a provided scene filter. Both `navtrain` and `navtest` are filtered to increase interesting samples in the sets.
 
 For the challenge on Hugging Face, we provide the `warmup_test_e2e` and `private_test_e2e` for the warm-up and challenge track, respectively. Note that `private_test_e2e` requires you to download the data, while `warmup_test_e2e` is a scene filter for the `mini` split.
