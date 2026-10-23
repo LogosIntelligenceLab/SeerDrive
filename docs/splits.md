@@ -106,7 +106,7 @@ The Table belows offers an overview on the training and test splits supported by
 
 ## Splits
 
-The standard splits `trainval`, `test`, and `mini` are from the OpenScene dataset. Note that the data corresponds to the nuPlan dataset with a lower frequency of 2Hz. You can download all standard splits over Hugging Face with the bash scripts in [download](../download)
+The standard splits `trainval`, `test`, and `mini` are from the OpenScene dataset. Note that the data corresponds to the nuPlan dataset with a lower frequency of 2Hz. You can download all standard splits over Hugging Face with the bash scripts in [download](https://github.com/autonomousvision/navsim/tree/main/download)
 
 NAVSIM provides a subset and filter of the `trainval` split, called `navtrain`. The `navtrain` split facilitates a standardized training scheme and requires significantly less sensor data storage than `travel` (445GB vs. 2100GB). If your agents don't need historical sensor inputs, you can download `navtrain` without history, which requires 300GB of storage. Note that `navtrain` can be downloaded separately via [download_navtrain.sh](https://github.com/autonomousvision/navsim/blob/main/download/download_navtrain_aws.sh) but still requires access to the `trainval` logs. Similarly, the `navtest` split enables a standardized set for testing agents with a provided scene filter. Both `navtrain` and `navtest` are filtered to increase interesting samples in the sets.
 
