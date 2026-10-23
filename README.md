@@ -19,7 +19,7 @@ End-to-end autonomous driving methods aim to directly map raw sensor inputs to f
 ## Install the environment
 The environment is installed following [DiffusionDrive](https://github.com/hustvl/DiffusionDrive), and a reference procedure is provided here.
 ```
-git clone git@github.com:LogosRoboticsGroup/SeerDrive.git
+git clone git@github.com:LogosIntelligenceLab/SeerDrive.git
 
 conda env create -f environment.yml
 conda activate navsim_seerdrive
